@@ -3,7 +3,6 @@ const buttons = document.querySelectorAll('.button');
 let operand1 = null;
 let operator = null;
 let result = null;
-
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const value = button.value;
@@ -32,7 +31,6 @@ buttons.forEach(button => {
     }
   });
 });
-
 function appendValue(value) {
   display.textContent += value;
 }
@@ -43,7 +41,6 @@ function clearDisplay() {
   operator = null;
   result = null;
 }
-
 function handleEquals() {
   if (!operator) {
     return;
